@@ -22,7 +22,7 @@ In regression, we train different models to predict the dependent variable accor
 
 Code for simple linear regression is in the file "linear_regression.py".In simple linear regression we make a linear model.Therefore, the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variables,b<sub>0</sub>&b<sub>1</sub> are constants obtained by training the model.
-</a> 
+<br/>Here we will be using the "Admission_Predict.csv" dataset.Which contains performance of students in various exams and the chances of the student getting selected in the college(0 being 0% chance and 1 being 100% chance).As this is a example of simple linear regression,we will take only one independent variable(GRE marks) and one dependent variable(chance of getting selected).
 <br/>![linear_regression_image](Images/linear_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![linear_regression_image](Images/linear_regression_test.png)
 <a>
