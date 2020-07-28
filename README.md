@@ -21,10 +21,11 @@ In regression, we train different models to predict the dependent variable accor
 ### Simple Linear Regression
 
 Code for simple linear regression is in the file "linear_regression.py".In simple linear regression we make a linear model.Therefore, the equation for the model is:
-**y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variables
+**y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variables,b<sub>0</sub>&b<sub>1</sub> are constants obtained by training the model.
+</a> 
 <br/>![linear_regression_image](Images/linear_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![linear_regression_image](Images/linear_regression_test.png)
 <a>
 
- In the above images, the blue line is the model that we trained and the red dots are the data points obtained from the dataset
+ In the above images, the blue line is the model that we trained and the red dots are the data points obtained from the dataset.
 </a> 
