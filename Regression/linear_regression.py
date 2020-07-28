@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('../Datasets/Admission_Predict.csv')
-x = dataset.iloc[:,1].values  
-y = dataset.iloc[:, -1].values
+x = dataset.iloc[:,1].values  #independent variable 
+y = dataset.iloc[:, -1].values  #dependent variable
 x = x.reshape(len(x),1)
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
