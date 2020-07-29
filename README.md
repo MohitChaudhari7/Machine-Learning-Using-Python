@@ -2,10 +2,10 @@
 This repository contains codes for machine learning algorithms with examples which are presented visually using graphs 
 
 ## Libraries Used
-1) matplotlib
-2) numpy
-3) pandas
-4) sklearn
+1) matplotlib(version 3.1.3)
+2) numpy(version 1.18.1)
+3) pandas(version 1.0.1)
+4) sklearn(version 0.22.1)
 
 ## Usage
 
