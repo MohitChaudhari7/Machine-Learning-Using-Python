@@ -46,7 +46,7 @@ bx = plt.axes(projection='3d')
 zline = regressor.predict(np.vstack((np.linspace(min(X[:,0]), 340, 3000),np.linspace(min(X[:,1]), 120, 3000))).T)
 xline = np.linspace(min(X[:,0]), 340, 3000)
 yline = np.linspace(min(X[:,1]), 120, 3000)
-ax.set_title('Test Set Results');
+bx.set_title('Test Set Results');
 bx.set_xlabel('GRE Score')
 bx.set_ylabel('TOFEL Score')
 bx.set_zlabel('Chance of getting selected');
