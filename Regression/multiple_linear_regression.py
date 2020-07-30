@@ -17,55 +17,39 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
 
-# Fitting Multiple Linear Regression to the Training set
+#Training the linear regression model with multiple independent variables
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 
-# Predicting the Test set results
-y_pred = regressor.predict(X_test)
 
-
-
-ax = plt.axes(projection='3d')
-
-# Data for a three-dimensional line
-zline = np.linspace(0, 15, 1000)
-xline = np.sin(zline)
-yline = np.cos(zline)
-ax.plot3D(xline, yline, zline, 'gray')
-
-# Data for three-dimensional scattered points
-zdata = 15 * np.random.random(100)
-xdata = np.sin(zdata) + 0.1 * np.random.randn(100)
-ydata = np.cos(zdata) + 0.1 * np.random.randn(100)
-ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens');
-
-
-
-#Visualising the data for this model
+#Visualising the training set results
 ax = plt.axes(projection='3d')
 zline = regressor.predict(np.vstack((np.linspace(min(X[:,0]), 340, 3000),np.linspace(min(X[:,1]), 120, 3000))).T)
 xline = np.linspace(min(X[:,0]), 340, 3000)
 yline = np.linspace(min(X[:,1]), 120, 3000)
+ax.set_xlabel('GRE Score')
+ax.set_ylabel('TOFEL Score')
+ax.set_zlabel('Chance of getting selected');
 ax.plot3D(xline, yline, zline, 'black')
-ax.scatter3D(X_train[:,0], X_train[:,1], regressor.predict(X_train), c=regressor.predict(X_train), cmap='ocean');
+xpoints = X_train[:,0]
+ypoints = X_train[:,1]
+zpoints = regressor.predict(X_train)
+ax.scatter3D(xpoints, ypoints, zpoints, c=zpoints, cmap='ocean_r');
 
-# Building the optimal model using Backward Elimination
-import statsmodels.api as sm
-X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
-X_opt = X[:, [0, 1, 2, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
-X_opt = X[:, [0, 1, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
-X_opt = X[:, [0, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
-X_opt = X[:, [0, 3, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
-X_opt = X[:, [0, 3]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+# Predicting the Test set results
+y_pred = regressor.predict(X_test)
+
+#Visualising the Test set results
+bx = plt.axes(projection='3d')
+zline = regressor.predict(np.vstack((np.linspace(min(X[:,0]), 340, 3000),np.linspace(min(X[:,1]), 120, 3000))).T)
+xline = np.linspace(min(X[:,0]), 340, 3000)
+yline = np.linspace(min(X[:,1]), 120, 3000)
+bx.set_xlabel('GRE Score')
+bx.set_ylabel('TOFEL Score')
+bx.set_zlabel('Chance of getting selected');
+bx.plot3D(xline, yline, zline, 'black')
+xpoints = X_test[:,0]
+ypoints = X_test[:,1]
+zpoints = regressor.predict(X_test)
+bx.scatter3D(xpoints, ypoints, zpoints, c=zpoints, cmap='ocean_r');
