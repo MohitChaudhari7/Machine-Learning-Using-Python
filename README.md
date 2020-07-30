@@ -40,5 +40,5 @@ Code for simple linear regression is in the file "multiple_linear_regression.py"
 <a>
  
  In the above images, the black line is the model that we trained and the colourful dots are the data points obtained from the dataset.
- **Note:** The colour and transparency of the dots doesn't signify anything,it is just used to get a proper 3D view.We can also train the model with more than two variables,but we will not be able to visualise it on graphs.
+ <br/>**Note:** The colour and transparency of the dots doesn't signify anything,it is just used to get a proper 3D view.We can also train the model with more than two variables,but we will not be able to visualise it on graphs.
 </a> 
