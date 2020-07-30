@@ -1,24 +1,30 @@
 # Machine-Learning-Using-Python
 This repository contains codes for machine learning algorithms with examples which are presented visually using graphs 
 
-## Libraries Used
+# Table Of Contents 
+  * [Libraries Used](#libraries-used)
+  * [Usage](#usage)
+  * [Regression](#regression)
+    * [Simple Linear Regression](#simple-linear-regression)
+    * [Multiple Linear Regression](#multiple-linear-regression)
+# Libraries Used
 1) matplotlib(version 3.1.3)
 2) numpy(version 1.18.1)
 3) pandas(version 1.0.1)
 4) sklearn(version 0.22.1)
 
-## Usage
+# Usage
 
 Install the required libraries and then run the code using any IDE(I have used spyder).
 
 **Note:** Don't forget to set the working directory to the folder that contains the python code as the datasets are imported using relative paths.
 
-## Regression(work in progress)
+# Regression
 In regression, we train different models to predict the dependent variable according to the independent variables.For achieving this goal, we divide our dataset into two sets, a training set and a test set.We will train the model using the training set and then see how good is the model on the basis of test set.
 
 **Note:** in these examples,we will visualise the test set and training set results rather than judging them mathmatically.
 
-### Simple Linear Regression
+## Simple Linear Regression
 
 Code for simple linear regression is in the file "linear_regression.py".In simple linear regression we make a linear model.Therefore, the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variables,b<sub>0</sub>&b<sub>1</sub> are constants obtained by training the model.
@@ -30,7 +36,7 @@ Code for simple linear regression is in the file "linear_regression.py".In simpl
  In the above images, the blue line is the model that we trained and the red dots are the data points obtained from the dataset.
 </a> 
 
-### Multiple Linear Regression
+## Multiple Linear Regression
 
 Code for simple linear regression is in the file "multiple_linear_regression.py".In multiple linear regression the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+b<sub>2</sub>x<sub>2</sub>........+b<sub>n</sub>x<sub>n</sub>**<br/>here x<sub>i</sub> = independent variable,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer
