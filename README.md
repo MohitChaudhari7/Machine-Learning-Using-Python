@@ -29,3 +29,16 @@ Code for simple linear regression is in the file "linear_regression.py".In simpl
 
  In the above images, the blue line is the model that we trained and the red dots are the data points obtained from the dataset.
 </a> 
+
+### Multiple Linear Regression
+
+Code for simple linear regression is in the file "multiple_linear_regression.py".In multiple linear regression the equation for the model is:
+**y=b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+b<sub>2</sub>x<sub>2</sub>........+b<sub>n</sub>x<sub>n</sub>**<br/>here x<sub>i</sub> = independent variable,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer
+<br/>Here we will be using the "Admission_Predict.csv" dataset.Which contains performance of students in various exams and the chances of the student getting selected in the college(0 being 0% chance and 1 being 100% chance).As this is a example of simple linear regression,we will take only two independent variables(GRE score & TOFEL score)and one dependent variable(chance of getting selected).
+<br/>![multiple_linear_regression_image](Images/multiple_linear_regression_train.png) &nbsp; &nbsp; &nbsp;
+![multiple_linear_regression_image](Images/multiple_linear_regression_test.png)
+<a>
+ 
+ In the above images, the black line is the model that we trained and the colourful dots are the data points obtained from the dataset.
+ **Note:** The colour and transparency of the dots doesn't signify anything,it is just used to get a proper 3D view.We can also train the model with more than two variables,but we will not be able to visualise it on graphs.
+</a> 
