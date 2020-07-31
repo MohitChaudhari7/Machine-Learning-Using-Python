@@ -8,7 +8,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Simple Linear Regression](#simple-linear-regression)
     * [Multiple Linear Regression](#multiple-linear-regression)
     * [Polynomial Regression](#polynomial-regression)
-    * [Support Vector Regression(SVR)](#support-vector-regression(svr))
+    * [Support Vector Regression(SVR)](#support-vector-regression)
   * [License](#license)
     
 # Libraries Used
@@ -66,9 +66,9 @@ Code for polynomial regression is in the file "polynomianl_regression.py".In pol
 <br/>**Note:** The model in above images is trained using a polynomial of degree 3,you can change the degree and find the optimal fit for a given data.
 </a> 
 
-## Support Vector Regression(SVR)
+## Support Vector Regression
 
-Code for support vector regression is in the file "support_vector_regression.py". 
+Code for support vector regression(svr) is in the file "support_vector_regression.py". 
 <br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages.In support vector regression , we can use different kernels to train the model according to the distribution of the data points.In this case , we have used the 'Gaussian RBF Kernel'. For learning more about kernels and other terminologies click [<u>here</u>](/Explanations/svm_svr.md)
 
 <br/>![SVR](Images/svr_train.png) &nbsp; &nbsp; &nbsp;
