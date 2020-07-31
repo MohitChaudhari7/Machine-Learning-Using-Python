@@ -31,7 +31,7 @@ In regression, we train different models to predict the dependent variable accor
 ## Simple Linear Regression
 
 Code for simple linear regression is in the file "linear_regression.py".In simple linear regression we make a linear model.Therefore, the equation for the model is:
-**y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variables,b<sub>0</sub>&b<sub>1</sub> are constants obtained by training the model.
+**y=b<sub>0</sub>+b<sub>1</sub>x**<br/>here x = independent variable,y = dependent variable,b<sub>0</sub>&b<sub>1</sub> are constants obtained by training the model.
 <br/>Here we will be using the "Admission_Predict.csv" dataset.Which contains performance of students in various exams and the chances of the student getting selected in the college(0 being 0% chance and 1 being 100% chance).As this is a example of simple linear regression,we will take only one independent variable(GRE marks) and one dependent variable(chance of getting selected).
 <br/>![linear_regression_image](Images/linear_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![linear_regression_image](Images/linear_regression_test.png)
@@ -43,7 +43,7 @@ Code for simple linear regression is in the file "linear_regression.py".In simpl
 ## Multiple Linear Regression
 
 Code for multiple linear regression is in the file "multiple_linear_regression.py".In multiple linear regression the equation for the model is:
-**y=b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+b<sub>2</sub>x<sub>2</sub>........+b<sub>n</sub>x<sub>n</sub>**<br/>here x<sub>i</sub> = independent variables,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer
+**y=b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+b<sub>2</sub>x<sub>2</sub>........+b<sub>n</sub>x<sub>n</sub>**<br/>here x<sub>i</sub> = independent variables,y = dependent variable,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer
 <br/>Here we will be using the "Admission_Predict.csv" dataset.Which contains performance of students in various exams and the chances of the student getting selected in the college(0 being 0% chance and 1 being 100% chance).As this is a example of simple linear regression,we will take only two independent variables(GRE score & TOFEL score)and one dependent variable(chance of getting selected).
 <br/>![multiple_linear_regression_image](Images/multiple_linear_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![multiple_linear_regression_image](Images/multiple_linear_regression_test.png)
@@ -56,7 +56,7 @@ Code for multiple linear regression is in the file "multiple_linear_regression.p
 ## Polynomial Regression
 
 Code for polynomial regression is in the file "polynomianl_regression.py".In polynomial regression the equation for the model is:
-**y=b<sub>0</sub>+b<sub>1</sub>x<sup>1</sup>+b<sub>2</sub>x<sup>2</sup>........+b<sub>n</sub>x<sup>n</sup>**<br/>here n = degree of the polynomial,x = independent variable,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer.
+**y=b<sub>0</sub>+b<sub>1</sub>x<sup>1</sup>+b<sub>2</sub>x<sup>2</sup>........+b<sub>n</sub>x<sup>n</sup>**<br/>here n = degree of the polynomial,x = independent variable,y = dependent variable,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer.
 <br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages. 
 <br/>![polynomial_regression_image](Images/polynomial_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![polynomial_regression_image](Images/polynomial_regression_test.png)
