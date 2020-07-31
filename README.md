@@ -8,7 +8,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Simple Linear Regression](#simple-linear-regression)
     * [Multiple Linear Regression](#multiple-linear-regression)
     * [Polynomial Regression](#polynomial-regression)
-  * [Liscence](#liscence)
+  * [License](#license)
     
 # Libraries Used
 1) matplotlib(version 3.1.3)
@@ -65,5 +65,5 @@ Code for simple linear regression is in the file "polynomianl_regression.py".In 
 <br/>**Note:** The model in above images is trained using a polynomial of degree 3,you can change the degree and find the optimal fit for a given data.
 </a> 
 
-# Liscence
-Liscenced under the [MIT Liscence](Liscence).
+# License
+Licensed under the [MIT License](LICENSE).
