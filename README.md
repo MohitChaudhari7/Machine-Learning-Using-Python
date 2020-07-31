@@ -8,6 +8,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Simple Linear Regression](#simple-linear-regression)
     * [Multiple Linear Regression](#multiple-linear-regression)
     * [Polynomial Regression](#polynomial-regression)
+    * [Support Vector Regression(SVR)](#support-vector-regression(svr))
   * [License](#license)
     
 # Libraries Used
@@ -41,7 +42,7 @@ Code for simple linear regression is in the file "linear_regression.py".In simpl
 
 ## Multiple Linear Regression
 
-Code for simple linear regression is in the file "multiple_linear_regression.py".In multiple linear regression the equation for the model is:
+Code for multiple linear regression is in the file "multiple_linear_regression.py".In multiple linear regression the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x<sub>1</sub>+b<sub>2</sub>x<sub>2</sub>........+b<sub>n</sub>x<sub>n</sub>**<br/>here x<sub>i</sub> = independent variables,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer
 <br/>Here we will be using the "Admission_Predict.csv" dataset.Which contains performance of students in various exams and the chances of the student getting selected in the college(0 being 0% chance and 1 being 100% chance).As this is a example of simple linear regression,we will take only two independent variables(GRE score & TOFEL score)and one dependent variable(chance of getting selected).
 <br/>![multiple_linear_regression_image](Images/multiple_linear_regression_train.png) &nbsp; &nbsp; &nbsp;
@@ -54,7 +55,7 @@ Code for simple linear regression is in the file "multiple_linear_regression.py"
 
 ## Polynomial Regression
 
-Code for simple linear regression is in the file "polynomianl_regression.py".In polynomial regression the equation for the model is:
+Code for polynomial regression is in the file "polynomianl_regression.py".In polynomial regression the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x<sup>1</sup>+b<sub>2</sub>x<sup>2</sup>........+b<sub>n</sub>x<sup>n</sup>**<br/>here n = degree of the polynomial,x = independent variable,y = dependent variables,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer.
 <br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages. 
 <br/>![polynomial_regression_image](Images/polynomial_regression_train.png) &nbsp; &nbsp; &nbsp;
@@ -65,5 +66,17 @@ Code for simple linear regression is in the file "polynomianl_regression.py".In 
 <br/>**Note:** The model in above images is trained using a polynomial of degree 3,you can change the degree and find the optimal fit for a given data.
 </a> 
 
+## Support Vector Regression(SVR)
+
+Code for support vector regression is in the file "support_vector_regression.py". 
+<br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages.In support vector regression , we can use different kernels to train the model according to the distribution of the data points.In this case , we have used the 'Gaussian RBF Kernel'. For learning more about kernels and other terminologies click [<u>here</u>](/Explanations/svm_svr.md)
+
+<br/>![SVR](Images/svr_train.png) &nbsp; &nbsp; &nbsp;
+![SVR](Images/svr_test.png)
+<a>
+
+ In the above images, the blue curve is the model that we trained and the red dots are the data points obtained from the dataset.
+ 
+ 
 # License
 Licensed under the [MIT License](LICENSE).
