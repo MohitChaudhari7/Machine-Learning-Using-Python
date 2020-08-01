@@ -9,6 +9,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Multiple Linear Regression](#multiple-linear-regression)
     * [Polynomial Regression](#polynomial-regression)
     * [Support Vector Regression(SVR)](#support-vector-regression)
+    * [Decision Tree Regression](#decision-tree-regression)
   * [License](#license)
     
 # Libraries Used
@@ -57,7 +58,7 @@ Code for multiple linear regression is in the file "multiple_linear_regression.p
 
 Code for polynomial regression is in the file "polynomianl_regression.py".In polynomial regression the equation for the model is:
 **y=b<sub>0</sub>+b<sub>1</sub>x<sup>1</sup>+b<sub>2</sub>x<sup>2</sup>........+b<sub>n</sub>x<sup>n</sup>**<br/>here n = degree of the polynomial,x = independent variable,y = dependent variable,b<sub>i</sub> are constants obtained by training the model...where 'i' is a positive integer.
-<br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages. 
+<br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height(dependent variable) at different ages. 
 <br/>![polynomial_regression_image](Images/polynomial_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![polynomial_regression_image](Images/polynomial_regression_test.png)
 <a>
@@ -69,13 +70,22 @@ Code for polynomial regression is in the file "polynomianl_regression.py".In pol
 ## Support Vector Regression
 
 Code for support vector regression(svr) is in the file "support_vector_regression.py". 
-<br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height at different ages.In support vector regression , we can use different kernels to train the model according to the distribution of the data points.In this case , we have used the 'Gaussian RBF Kernel'. For learning more about kernels and other terminologies click [<u>here</u>](/Explanations/svm_svr.md)
+<br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height(dependent variable) at different ages.In support vector regression , we can use different kernels to train the model according to the distribution of the data points.In this case , we have used the 'Gaussian RBF Kernel'. For learning more about kernels and other terminologies click [<u>here</u>](/Explanations/svm_svr.md)
 
 <br/>![SVR](Images/svr_train.png) &nbsp; &nbsp; &nbsp;
 ![SVR](Images/svr_test.png)
 <a>
 
  In the above images, the blue curve is the model that we trained and the red dots are the data points obtained from the dataset.
+ 
+ ## Decision Tree Regression
+ Code for decision tree regression is in the file "decision_tree_regression.py".
+ <br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height(dependent variable) at different ages. In decision tree regression , we make splits in the data points to make them into smaller groups and then predict the dependent variable value of the new data point on the basis of theese groups. For learning more about these splits click [<u>here</u>](/Explanations/decision_tree_regression.md) . In one dimension these slits looks like steps when plotted on graph with the dependent variable.
+ 
+ <br/>![decision tree regression](Images/decision_tree_regression_train.png) &nbsp; &nbsp; &nbsp;
+![decision tree regression](Images/decision_tree_regression_test.png)
+<a>
+In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.
  
  
 # License
