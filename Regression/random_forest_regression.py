@@ -17,7 +17,7 @@ ind_train, ind_test, dep_train, dep_test = train_test_split(ind, dep, test_size 
 
 # Training the Random Forest Regression model on the training set
 from sklearn.ensemble import RandomForestRegressor
-regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
+regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)# n_estimators is the number of trees we want in the forest
 regressor.fit(ind_train, dep_train)
 
 
