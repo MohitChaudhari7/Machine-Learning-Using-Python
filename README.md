@@ -10,6 +10,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Polynomial Regression](#polynomial-regression)
     * [Support Vector Regression(SVR)](#support-vector-regression)
     * [Decision Tree Regression](#decision-tree-regression)
+    * [Random Forest Regression](#random-forest-regression)
   * [License](#license)
     
 # Libraries Used
@@ -87,6 +88,13 @@ Code for support vector regression(svr) is in the file "support_vector_regressio
 <a>
 In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.
  
+ ## Random Forst Regression
+  Code for random forest regression is in the file "random_forest_regression.py".
+  <br/>Here we will be using "HeightVsAge.csv" dataset which contains the average height(dependent variable) at different ages. In random forest regression, we basically use multiple decision trees. We select some random points from the dataset and train the decision tree with those points, we do this for each decision tree. We we need to predict the dependent variable for a datapoint, we take the predicted value from each decision tree and then average it.
+  <br/>![random forest regression](Images/random_forest_regression_train.png) &nbsp; &nbsp; &nbsp;
+![random forest regression](Images/random_forest_regression_test.png)
+<a> 
+ In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.Here we have more steps than the decision tree regression.
  
 # License
 Licensed under the [MIT License](LICENSE).
