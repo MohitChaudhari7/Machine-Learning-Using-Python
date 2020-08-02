@@ -33,10 +33,11 @@ from matplotlib.colors import ListedColormap
 x, y = ind_train, dep_train
 X, Y = np.meshgrid(np.arange(start = x[:, 0].min() - 0.5, stop = x[:, 0].max() + 0.5, step = 0.01),
                      np.arange(start = x[:, 1].min() - 0.5, stop = x[:, 1].max() + 0.5, step = 0.01))
-plt.contourf(X, Y, classifier.predict(np.array([X.ravel(), Y.ravel()]).T).reshape(X.shape),
-             alpha = 0.5, cmap = ListedColormap(('red', 'blue')))
 plt.xlim(X.min(), X.max())
 plt.ylim(Y.min(), Y.max())
+plt.contourf(X, Y, classifier.predict(np.array([X.ravel(), Y.ravel()]).T).reshape(X.shape),
+             alpha = 0.5, cmap = ListedColormap(('red', 'blue')))
+#plotting the data points
 un_y =np.unique(y)
 for i, j in enumerate(un_y):
     plt.scatter(x[y == j, 0], x[y == j, 1],c = ListedColormap(('red', 'blue'))(i), label = j)
@@ -50,10 +51,11 @@ plt.show()
 x, y = ind_test, dep_test
 X, Y = np.meshgrid(np.arange(start = x[:, 0].min() - 0.5, stop = x[:, 0].max() + 0.5, step = 0.01),
                      np.arange(start = x[:, 1].min() - 0.5, stop = x[:, 1].max() + 0.5, step = 0.01))
-plt.contourf(X, Y, classifier.predict(np.array([X.ravel(), Y.ravel()]).T).reshape(X.shape),
-             alpha = 0.5, cmap = ListedColormap(('red', 'blue')))
 plt.xlim(X.min(), X.max())
 plt.ylim(Y.min(), Y.max())
+plt.contourf(X, Y, classifier.predict(np.array([X.ravel(), Y.ravel()]).T).reshape(X.shape),
+             alpha = 0.5, cmap = ListedColormap(('red', 'blue')))
+#plotting the data points
 un_y =np.unique(y)
 for i, j in enumerate(un_y):
     plt.scatter(x[y == j, 0], x[y == j, 1],c = ListedColormap(('red', 'blue'))(i), label = j)
