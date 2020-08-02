@@ -11,6 +11,7 @@ This repository contains codes for machine learning algorithms with examples whi
     * [Support Vector Regression(SVR)](#support-vector-regression)
     * [Decision Tree Regression](#decision-tree-regression)
     * [Random Forest Regression](#random-forest-regression)
+  * [Classification](#classification)
   * [License](#license)
     
 # Libraries Used
@@ -96,5 +97,13 @@ In the above images, the blue steps are the model that we trained and the red do
 <a> 
  In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.Here we have more steps than the decision tree regression.
  
+# Classification
+In classification, we classify the new datapoints in predefined catagories.For this purpose, we train a model with a dataset.The model tries to find the characteristics that correspond to that particular category.
+<br/>For eg: if we want to see whether a person will buy a product or not.Let the independent variables are income and age and the dependent variable be whether the person will buy the product.Thus, the model will try to find the age range and income range of the people who buy the product.
+<br/>We will see how good the model is with the help of confusion matrix.This is a 2x2 matrix, for eg.[[30,5],[7,40]].The number of correct predictions by the model are:30+40=70.The number of incorrect predictions are:5+7=12.
+
+## Logistic Regression
+ Code for random forest regression is in the file "logistic_regression.py".
+
 # License
 Licensed under the [MIT License](LICENSE).
