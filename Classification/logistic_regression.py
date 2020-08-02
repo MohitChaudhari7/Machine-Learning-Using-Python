@@ -27,7 +27,7 @@ classifier.fit(ind_train, dep_train) #we train the classifier
 
 dep_pred = classifier.predict(ind_test) #we predict the test set results
 
-
+# read about plotting of contours here "https://matplotlib.org/3.1.1/gallery/images_contours_and_fields/contour_image.html#sphx-glr-gallery-images-contours-and-fields-contour-image-py"
 # Plotting the Training set results
 from matplotlib.colors import ListedColormap
 x, y = ind_train, dep_train
