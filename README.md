@@ -87,6 +87,7 @@ Code for support vector regression(svr) is in the file "support_vector_regressio
  <br/>![decision tree regression](Images/decision_tree_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![decision tree regression](Images/decision_tree_regression_test.png)
 <a>
+ 
 In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.
  
  ## Random Forest Regression
@@ -95,6 +96,7 @@ In the above images, the blue steps are the model that we trained and the red do
   <br/>![random forest regression](Images/random_forest_regression_train.png) &nbsp; &nbsp; &nbsp;
 ![random forest regression](Images/random_forest_regression_test.png)
 <a> 
+ 
  In the above images, the blue steps are the model that we trained and the red dots are the data points obtained from the dataset.Here we have more steps than the decision tree regression.
  
 # Classification
