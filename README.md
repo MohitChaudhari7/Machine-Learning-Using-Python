@@ -103,7 +103,7 @@ In classification, we classify the new datapoints in predefined catagories.For t
 <br/>We will see how good the model is with the help of confusion matrix.This is a 2x2 matrix, for eg.[[30,5],[7,40]].The number of correct predictions by the model are:30+40=70.The number of incorrect predictions are:5+7=12.
 
 ## Logistic Regression
- Code for random forest regression is in the file "logistic_regression.py".
+ Code for logistic regression is in the file "logistic_regression.py".
 
 # License
 Licensed under the [MIT License](LICENSE).
