@@ -106,6 +106,7 @@ In classification, we classify the new datapoints in predefined catagories.For t
 
 ## Logistic Regression
  Code for logistic regression is in the file "logistic_regression.py".
-
+  <br/>![random forest regression](Images/logistic_regression_train.png) &nbsp; &nbsp; &nbsp;
+![random forest regression](Images/logistic_regression_test.png)
 # License
 Licensed under the [MIT License](LICENSE).
