@@ -37,6 +37,7 @@ plt.xlim(X.min(), X.max())
 plt.ylim(Y.min(), Y.max())
 plt.contourf(X, Y, classifier.predict(np.array([X.ravel(), Y.ravel()]).T).reshape(X.shape),
              alpha = 0.5, cmap = ListedColormap(('red', 'blue')))
+
 #plotting the data points
 un_y =np.unique(y)
 for i, j in enumerate(un_y):
