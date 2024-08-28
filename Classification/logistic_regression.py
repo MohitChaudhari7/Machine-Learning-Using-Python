@@ -69,3 +69,4 @@ plt.show()
 # Confusion Matrix(this matrix contains the amount of datapoints those are in correct region and those are in incorrect region)
 from sklearn.metrics import confusion_matrix
 print(confusion_matrix(dep_test, dep_pred))
+
